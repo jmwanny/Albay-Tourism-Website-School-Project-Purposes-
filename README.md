@@ -26,7 +26,7 @@ This is a **mockup/prototype website** created for **educational purposes only**
 ## 💻 System Requirements
 
 **Recommended Viewing Environment:**
-- Screen Resolution: **1200px width and above**
+- Screen Resolution: **1100px width and above**
 - Desktop monitors and laptops
 - Modern web browsers (Chrome, Firefox, Edge, Safari)
 
