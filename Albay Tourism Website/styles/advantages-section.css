@@ -1,0 +1,47 @@
+.advantages-section {
+    background-color: #14141436;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 20px;
+}
+
+.a-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:270px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.a-card i{
+    color: #00EAFF;
+    background-color: rgba(255, 234, 255, 0.01);
+    border: 2px solid #00EAFF;
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.a-card h3{
+    font-size: 15px;
+    color:#00EAFF;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.a-card h3::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #00EAFF, #FF8C00);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+.a-card p{
+    font-size: 13px;
+    width:220px;
+}
+

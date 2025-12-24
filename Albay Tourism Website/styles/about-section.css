@@ -1,0 +1,68 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #0A0A0A;
+  padding: 120px  0;
+}
+
+.left-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  color: white;
+
+}
+
+.left-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.3em;
+  letter-spacing: 1.3px;
+}
+
+.left-container p {
+  font-size: 0.9em;
+}
+
+.left-container .signature {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1.3em;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+}
+
+.image1,
+.image2 {
+  border: 1.5px solid white;
+  object-fit: cover;
+}
+
+.image1 {
+  width: 300px;
+  height: 300px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.image2 {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  bottom: -70px;
+  left: 110px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
