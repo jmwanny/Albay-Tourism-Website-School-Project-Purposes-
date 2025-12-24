@@ -2,7 +2,7 @@
 
 A mockup tourism website showcasing the beautiful province of Albay, Philippines. This project was developed as part of the Web Technologies course in the Bachelor of Science in Information Technology (BSIT) program.
 
-![Website Preview](./assets/preview.png) <!-- Add your screenshot here -->
+![Website Preview](./assets/preview) <!-- Add your screenshot here -->
 
 ## ⚠️ Disclaimer
 
