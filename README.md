@@ -12,7 +12,7 @@ This is a **mockup/prototype website** created for **educational purposes only**
 
 - **HTML5** - Semantic markup and structure
 - **CSS3** - Styling and layout design
-- **Vanilla JavaScript** - Interactive features and DOM manipulation
+- **JavaScript** - Interactive features and DOM manipulation
 
 ## 📋 Features
 
@@ -63,15 +63,32 @@ Or simply double-click the `index.html` file to open it in your default browser.
 ## 📁 Project Structure
 
 ```
-albay-tourism-website/
+ALBAY-TOURISM-WEBSITE/
 │
-├── index.html          # Main homepage
-├── css/
-│   └── style.css       # Stylesheet
-├── js/
-│   └── script.js       # JavaScript functionality
-├── images/             # Image assets
-└── README.md           # Project documentation
+├── index.html                    # Main homepage
+├── form_success.html             # Form submission success page
+│
+├── .vscode/                      # VS Code configuration
+├── audio/                        # Audio assets
+├── images/                       # Image assets
+├── video/                        # Video assets
+│
+├── styles/                       # CSS stylesheets
+│   ├── about-section.css         # About section styles
+│   ├── advantages-section.css    # Advantages/benefits section
+│   ├── contact-section.css       # Contact form styles
+│   ├── divider-section.css       # Section dividers
+│   ├── explore-page.css          # Explore page styles
+│   ├── footer.css                # Footer styles
+│   ├── gallery.css               # Image gallery styles
+│   ├── general.css               # Global/general styles
+│   ├── header.css                # Header/navigation styles
+│   ├── landing-page.css          # Landing/hero section
+│   ├── plantrip-section.css      # Trip planning section
+│   ├── ratings-section.css       # Ratings/reviews section
+│   └── tour-pack-page.css        # Tour packages page
+│
+└── script.js                     # JavaScript functionality
 ```
 
 ## 🎯 Learning Objectives
@@ -99,6 +116,7 @@ This project demonstrates proficiency in:
 
 **Course:** Web Technologies  
 **Program:** Bachelor of Science in Information Technology (BSIT)  
+**Academic Year:** 2025-2026
 **Institution:** Polytechnic Institute of Tabaco
 
 ## 👨‍💻 Author
