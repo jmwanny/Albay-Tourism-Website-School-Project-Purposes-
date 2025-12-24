@@ -1,0 +1,190 @@
+.plan-trip-section {
+  padding: 100px 20px 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.plan-trip-header {
+  text-align: center;
+  background: linear-gradient(90deg, #0B47FF, #1AB6FF);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.plan-trip-header h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.quick-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 0.95rem;
+  background: rgba(0, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 80%;
+  margin: auto;
+}
+
+.quick-info span strong {
+  color: #00e0ff;
+}
+
+.plan-trip-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.plan-trip-main-container {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+}
+
+.left-box {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 15px;
+}
+
+.stretch {
+  grid-column: 1/3;
+}
+
+.plan-trip-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #ffffff73;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: default;
+
+}
+
+.plan-trip-card:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid #00e0ff;
+}
+
+.plan-trip-card i {
+  font-size: 28px;
+  color: #1AB6FF;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.plan-trip-card h2 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.plan-trip-card p,
+.plan-trip-card ul {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.plan-trip-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+.itinerary-p{
+  position: relative;
+  padding-left: 20px;
+}
+.itinerary-p::before{
+  content: "";
+  width:3px;
+  height:100%;
+  position: absolute;
+  left:6px;;
+  top:0;
+  background-color: #00e0ff;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+.right-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.albay-video-container {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #ffffff73;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.albay-video-container:hover {
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateY(-4px);
+  border: 1px solid #00e0ff;
+}
+
+.albay-video-container video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.albay-video-container h1 {
+  font-size: 22px;
+  margin: 8px 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.albay-video-container p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button-container a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  transition: all 0.15s;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button-container a:first-of-type {
+  background-color: #00FFEA;
+  color: black;
+}
+
+.button-container a:first-of-type:hover {
+  opacity: 0.8;
+}
+
+.button-container a:nth-of-type(2) {
+  border: 2px solid white;
+  color: white;
+}
+
+.button-container a:nth-of-type(2):hover {
+  background-color: white;
+  color: black;
+}

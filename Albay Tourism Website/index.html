@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albay Tourism - Website</title>
+  <link rel="icon" type="image/png" href="images/albay-tourism-logo.png">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/landing-page.css">
+  <link rel="stylesheet" href="styles/advantages-section.css">
+  <link rel="stylesheet" href="styles/about-section.css">
+  <link rel="stylesheet" href="styles/explore-page.css">
+  <link rel="stylesheet" href="styles/divider-section.css">
+  <link rel="stylesheet" href="styles/tour-pack-page.css">
+  <link rel="stylesheet" href="styles/plantrip-section.css">
+  <link rel="stylesheet" href="styles/ratings-section.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/contact-section.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+
+  <!--Audio-->
+  <div class="music-player" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+    <div class="music-btn" id="playBtn">
+      <i class="fas fa-play"></i>
+      <span class="music-text">Albay Hymn Playing</span>
+    </div>
+    <audio autoplay loop id="audioPlayer">
+      <source src="audio/albay-hymn.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!--Header With Navbars-->
+  <header class="my-header">
+    <div class="header-layout-container" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+      <div class="logo-container">
+        <a href="#landing-page">
+          <img src="images/albay-tourism-logo.png" width="65" height="65" alt="Albay Tourism Logo">
+        </a>
+      </div>
+      <nav class="navigations" id="navbar">
+        <ul>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#plan-trip">Plan Your Trip</a></li>
+          <li><a href="#tour">Tour Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="contact-us-container">
+        <a href="#contact" id="contact-button">Contact Us Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--Landing Page Section-->
+    <section class="landing-page-section" id="landing-page">
+      <div id="albay-text" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+        <h1>ALBAY</h1>
+      </div>
+      <div class="albay-description" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+        <p>Plan a memorable trip to Albay, Philippines-home of the iconic
+          <span><b>Mayon Volcano</b></span>, rich culture,<br> bold flavors, and warm people.
+          Scroll to explore attractions, itineraries, and events.
+        </p>
+      </div>
+      <div class="albay-section-button" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <a href="#explore" class="button1">Explore Now <img src="images/arrow-vector.png" alt="Arrow vector"></a>
+      </div>
+
+      <div class="booking-bar-wrapper">
+        <form action="submit.php" method="GET">
+          <div class="booking-bar" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="destination-header">
+              <h1><img src="images/location-vector.png" alt="Location vector">Place To Visit</h1>
+              <div class="input">
+                <input type="text" name="input-dstn" id="input-dstn" placeholder="Where are you going?" required>
+              </div>
+            </div>
+
+            <div class="date">
+              <h1><img src="images/calendar-vector.png" alt="Date vector">Travel Date</h1>
+              <div class="input">
+                <input type="date" name="input-dte" id="input-dte" placeholder="Date" required>
+              </div>
+            </div>
+            <div class="guests">
+              <h1><img src="images/guests-vector.png" alt="Guests vector">No. of Visitors</h1>
+              <div class="input">
+                <input type="number" name="input-gst" id="input-gst" placeholder="Number" min="1" required>
+              </div>
+            </div>
+            <div class="booking">
+              <button type="submit" value="Button">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about-section">
+      <div class="left-container" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1>UNVEIL A DIFFERENT <br> WAY TO EXPERIENCE ALBAY</h1>
+        <p>Discover the heart of Bicol through the breathtaking wonders of Albay. From the world-
+          famous Mayon Volcano to the serene beaches of Sto. Domingo and Misibis Bay, every corner offers a story
+          waiting to be explored. Let Albay surprise you with its perfect blend of adventure, culture, and
+          natural beauty.
+        </p>
+        <p>Our mission is to help travelers experience Albay beyond the usual. Whether you're chasing waterfalls,
+          savoring spicy Bicolano dishes, or immersing yourself in local traditions, we'll guide you to the most
+          unforgettable experiences this province has to offer.
+        </p>
+        <p class="signature">- Albay Tourism Council</p>
+      </div>
+      <div class="right-container">
+        <img class="image1" src="images/mayon-volcano-about.jpg" alt="Mayon Volcano Picture" data-aos="fade-right"
+          data-aos-delay="200" data-aos-duration="1000" data-aos-anchor-placement="top">
+        <img class="image2" src="images/misibis-bay-about.jpg" alt="Misibis Bay Picture" data-aos="fade-left"
+          data-aos-delay="200" data-aos-duration="1000" data-aos-anchor-placement="top">
+      </div>
+    </section>
+
+    <!--Our Advantages Section-->
+    <section class="advantages-section">
+      <div class="a-card">
+        <i class="fa fa-smile"></i>
+        <h3>Customer Satisfaction</h3>
+        <p>We ensure your Albay trip is comfortable, joyful, and unforgettable.
+        </p>
+      </div>
+      <div class="a-card">
+        <i class="fa fa-mountain-sun"></i>
+        <h3>Authentic Adventure</h3>
+        <p>Discover Albay's true charm - from Mayon Volcano to vibrant local culture.
+        </p>
+      </div>
+      <div class="a-card">
+        <i class="fa fa-person-hiking"></i>
+        <h3>Expert Guidance</h3>
+        <p>Our experienced local guides ensure safe, informative, and fun adventures.
+        </p>
+      </div>
+      <div class="a-card">
+        <i class="fa fa-clock"></i>
+        <h3>Flexible Schedules</h3>
+        <p>Pick from flexible tours and check-in times that suit your travel plans.
+        </p>
+      </div>
+
+    </section>
+
+    <!--Explore Section-->
+    <section class="explore-section" id="explore">
+      <div class="explore-header-text" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1>EXPLORE ALBAY'S MAJESTY</h1>
+        <p>Top attractions and experiences you shouldn't miss.
+          Hover and tap the name of place to see more details.
+        </p>
+      </div>
+
+      <div class="explore-cards-wrapper">
+        <div class="explore-cards-track">
+          <div class="card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            <img src="images/mayon-card.jpg" alt="Mayon Volcano"> <!--Size was set in CSS Styles-->
+            <div class="card-description-text">
+              <h1>
+                <a href="https://simple.wikipedia.org/wiki/Mayon_Volcano" target="_blank">Mayon Volcano and
+                  Viewpoints</a>
+              </h1>
+              <p>Best at sunrise - Daraga & Legazpi</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <img src="images/cagsawa-card.jpg" alt="Cagsawa Ruins">
+            <div class="card-description-text">
+              <h1><a href="https://en.wikipedia.org/wiki/Cagsawa_Ruins" target="_blank">Cagsawa Ruins Park</a></h1>
+              <p>History & views - Entrance fees apply</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+            <img src="images/greenhills-card.jpg" alt="Quintinday Hills">
+            <div class="card-description-text">
+              <h1><a href="https://www.travelingmorion.com/2018/11/albay-quitinday-hills-in-camalig.html"
+                  target="_blank">Quintinday Green Hills</a></h1>
+              <p>Short hikes - Panoramic cone views</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <img src="images/sumlang-lake.jpg" alt="Sumlang Lake">
+            <div class="card-description-text">
+              <h1><a href="https://www.taraletsanywhere.com/sumlang-lake/" target="_blank">Sumlang Lake</a></h1>
+              <p>Tranquil waters – Scenic volcano view</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+            <img src="images/vera-falls.jpg" alt="Vera Falls picture">
+            <div class="card-description-text">
+              <h1>
+                <a href="https://wanderlog.com/place/details/13800283/vera-falls" target="_blank">Vera Falls</a>
+              </h1>
+              <p>Hidden gem of Malinao – Crystal-clear waters surrounded by lush rainforest.</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+            <img src="images/lignon-hill.jpg" alt="Ligñon Hill Picture">
+            <div class="card-description-text">
+              <h1><a href="https://en.wikipedia.org/wiki/Lig%C3%B1on_Hill" target="_blank">Ligñon Hill </a></h1>
+              <p>Adventure hub – Zipline, viewing deck & Mayon Observatory.</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+            <img src="images/wildlife.jpg" alt="Wildlife Albay picture">
+            <div class="card-description-text">
+              <h1><a href="https://bcl.wikipedia.org/wiki/Albay_Park_and_Wildlife" target="_blank">Albay Park & Wildlife
+                </a></h1>
+              <p>Family destination – Mini zoo & recreation area in Legazpi.</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
+            <img src="images/misibis.jpg" alt="Misibis Bay Resort picture">
+            <div class="card-description-text">
+              <h1><a href="https://misibisbay.com/" target="_blank">Misibis Bay Resort</a></h1>
+              <p>Luxury escape – White sand resort with water sports and Mayon views.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Plan Trip Section-->
+    <section class="plan-trip-section" id="plan-trip">
+      <div class="plan-trip-header" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1>PLAN YOUR TRIP</h1>
+        <p class="plan-trip-description">Your guide to getting here, exploring, and enjoying Albay safely.</p>
+      </div>
+      <div class="quick-info" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+        <span>🕓 Best time to visit: <strong>November–May</strong></span>
+        <span>🌡 Avg. temperature: <strong>26°C</strong></span>
+        <span>💰 Currency: <strong> Philippine Peso (PHP)</strong></span>
+      </div>
+
+      <div class="plan-trip-main-container">
+        <div class="left-box" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+
+          <div class="plan-trip-card">
+            <i class="fas fa-plane"></i>
+            <h2>Getting Here</h2>
+            <p>Fly to Legazpi Airport, take a scenic bus ride, or arrive via Matnog ferry.</p>
+          </div>
+
+          <div class="plan-trip-card">
+            <i class="fas fa-car"></i>
+            <h2>Local Transport</h2>
+            <p>Jeepneys, tricycles, rentals, or tour vans make moving around easy.</p>
+          </div>
+
+          <div class="plan-trip-card">
+            <i class="fas fa-bed"></i>
+            <h2>Accommodation</h2>
+            <p>Stay in resorts, homestays, or cozy budget inns near Legazpi or Daraga.</p>
+          </div>
+
+          <div class="plan-trip-card">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>Suggested Itinerary</h2>
+            <p class="itinerary-p">
+              <strong>Day 1:</strong> Mayon Volcano & Cagsawa Ruins<br>
+              <strong>Day 2:</strong> Sumlang Lake & Food Tour<br>
+              <strong>Day 3:</strong> Quitinday Hills Adventure
+            </p>
+          </div>
+
+          <div class="plan-trip-card stretch">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Travel Tips</h2>
+            <ul>
+              <li>Check volcano & weather updates</li>
+              <li>Respect local customs</li>
+              <li>Carry essentials & travel smart</li>
+              <li>Secure your valuables</li>
+              <li>Stay healthy and hydrated</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="right-box" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+          <div class="albay-video-container">
+            <video controls>
+              <source src="video/albay-video.mp4" type="video/mp4">
+            </video>
+            <h1>Discover Albay in Motion</h1>
+            <p>🎥 Watch: A glimpse of the natural beauty, culture, and adventure awaiting you.</p>
+          </div>
+          <div class="button-container">
+            <a href="#contact">Tourist Assistance</a>
+            <a href="https://www.google.com/maps/place/Albay,+Philippines/" target="_blank">Open Map</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="divider-section">
+      <h2 class="divider-title">Albay’s Iconic Spots</h2>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div class="logo-item">
+            <img src="images/sm.png" alt="SM City Legazpi logo">
+            <div class="logo-overlay">SM Legazpi</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/farmplate.png" alt="Farmplate Logo Daraga Albay">
+            <div class="logo-overlay">Farm Plate</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/highlands.jpg" alt="Highlands Legazpi logo">
+            <div class="logo-overlay">Highlands</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/albay-seal.png" alt="Albay Seal">
+            <div class="logo-overlay">Province of Albay</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/misibis-bay.jpg" alt="Misibis Bay Logo">
+            <div class="logo-overlay">Misibis Bay</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/quitinday.jpg" alt="Quitinday Logo">
+            <div class="logo-overlay">Quitinday Hills</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/cagsawa-ruins.jpg" alt="Cagsawa Ruins and ATV Ride">
+            <div class="logo-overlay">Cagsawa Ruins & <br> ATV Tour</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/sm.png" alt="SM City Legazpi logo">
+            <div class="logo-overlay">SM Legazpi</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/farmplate.png" alt="Farmplate Logo Daraga Albay">
+            <div class="logo-overlay">Farm Plate</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/highlands.jpg" alt="Highlands Legazpi logo">
+            <div class="logo-overlay">Highlands</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/albay-seal.png" alt="Albay Seal">
+            <div class="logo-overlay">Province of Albay</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/misibis-bay.jpg" alt="Misibis Bay Logo">
+            <div class="logo-overlay">Misibis Bay</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/quitinday.jpg" alt="Quitinday Logo">
+            <div class="logo-overlay">Quitinday Hills</div>
+          </div>
+
+          <div class="logo-item">
+            <img src="images/cagsawa-ruins.jpg" alt="Cagsawa Ruins and ATV Ride">
+            <div class="logo-overlay">Cagsawa Ruins & <br> ATV Tour</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Tour Packages Section-->
+    <section class="tour-packages-section" id="tour">
+      <div class="header-text" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1>TOUR PACKAGES</h1>
+        <p>Choose from our curated experiences.</p>
+      </div>
+      <div class="table-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <table>
+          <thead>
+            <tr>
+              <th>Package</th>
+              <th>Inclusions</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Day Tour: Mayon & Cagsawa</td>
+              <td>Mayon Volcano Viewpoints, Cagsawa Ruins, Ligñon Hill Adventure</td>
+              <td>₱ 1500 / person</td>
+            </tr>
+            <tr>
+              <td>Adventure & Nature</td>
+              <td>Quintinday Green Hills, Sumlang Lake, Vera Falls, ATV Ride</td>
+              <td>₱ 3800 / person</td>
+            </tr>
+            <tr>
+              <td>Luxury & Relaxation</td>
+              <td>Misibis Bay Resort Stay, Water Activities, Mayon Views</td>
+              <td>₱ 7500 / person</td>
+            </tr>
+            <tr>
+              <td>Cultural & Foodie Tour</td>
+              <td>Farm Plate Dining, Legazpi City Heritage Tour, Local Market Visit, Cooking Class</td>
+              <td>₱ 3200 / person</td>
+            </tr>
+            <tr>
+              <td>Family Fun Package</td>
+              <td>Albay Park & Wildlife, Sumlang Lake Picnic & Boat Ride, SM Legazpi Visit</td>
+              <td>₱ 2800 / person</td>
+            </tr>
+            <tr>
+              <td>Hidden Gems & Waterfalls</td>
+              <td>Vera Falls, Busay Falls, Cagraray Island, Nature Walks & Photo Spots</td>
+              <td>₱ 4000 / person</td>
+            </tr>
+            <tr>
+              <td>Ultimate Albay Experience</td>
+              <td>Mayon Volcano Sunrise, Misibis Bay Beach, Cagsawa Ruins, Quintinday Hills, Ligñon Hill Zipline</td>
+              <td>₱ 8200 / person</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+    <section class="ratings-section">
+      <div class="ratings-header" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1 class="r-header-title">
+          Loved By Travelers, <span>Recommended </span>Across Albay
+        </h1>
+        <p class="r-header-description">
+          Travelers from across the Philippines and around the world choose Albay for unforgettable
+          journeys filled with culture, adventure, and natural beauty.
+          From the slopes of Mayon Volcano to the shores of Misibis Bay,
+          visitors fall in love with the warmth and authenticity that make Albay truly special.
+        </p>
+      </div>
+
+      <div class="ratings-grid-container">
+        <div class="r-card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+          <div class="avatar-head">
+            <img src="images/maria-santos.jpeg" alt="Maria Santos Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">Maria Santos</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">Toronto, Canada</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“Albay truly amazed me! The view of Mayon Volcano was breathtaking,
+              and the locals were incredibly friendly. Definitely one
+              of my most unforgettable trips!”
+            </p>
+          </div>
+        </div>
+        <div class="r-card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+          <div class="avatar-head">
+            <img src="images/john-ramirez.jpg" alt="John Ramirez Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">John Ramirez</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">Cebu City, Philippines</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“The food, the culture, and the scenery were all amazing!
+              I especially loved the experience at Cagsawa Ruins and the peaceful vibe of Legazpi.”
+            </p>
+          </div>
+        </div>
+        <div class="r-card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+          <div class="avatar-head">
+            <img src="images/katrina-cruz.jpg" alt="Katrina Cruz Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">Katrina Cruz</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">Sydney, Australia</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“I didn’t expect Albay to have so many adventures!
+              ATV rides near Mayon were thrilling,
+              and the beaches around Misibis Bay were picture-perfect.”
+            </p>
+          </div>
+        </div>
+        <div class="r-card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom">
+          <div class="avatar-head">
+            <img src="images/miguel-torres.jpg" alt="Miguel Torres Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">Miguel Torres</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">Iloilo City, Philippines</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“Perfect for both nature lovers and foodies.
+              Albay’s spicy dishes were a great match for the stunning scenery.
+              Would love to come back!”
+            </p>
+          </div>
+        </div>
+        <div class="r-card" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom">
+          <div class="avatar-head">
+            <img src="images/hannah-lopez.jpg" alt="Hannah Lopez Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">Hannah Lopez</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">Baguio City, Philippines</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“The warmth of the people in Albay made me feel at home.
+              Every spot was postcard-worthy, especially during sunrise by the volcano!”
+            </p>
+          </div>
+        </div>
+        <div class="r-card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom">
+          <div class="avatar-head">
+            <img src="images/carlo-mendoza.jpg" alt="Carlo Mendoza Avatar Picture">
+            <div class="user-info">
+              <h1 class="name">Carlo Mendoza</h1>
+              <div class="star-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="user-place">London, United Kingdom</p>
+            </div>
+          </div>
+          <div class="ratings-description">
+            <p>“Albay’s charm is unmatched.
+              From history to nature, it’s all here. A must-visit for every
+              traveler exploring the Philippines.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Gallery Section-->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-header-text" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-anchor-placement="top">
+        <h1>GALLERY</h1>
+        <p>A glimpse of Albay’s breathtaking landscapes, heritage sites, and vibrant culture.</p>
+      </div>
+      <div class="grid-container" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+        <img id="img1" src="images/wildlife.jpg" alt="Wildlife Picture">
+        <div class="nested-grid">
+          <img src="images/greenhills-gallery.jpg" alt="Greenhills Picture" width="246" height="138.38">
+          <img src="images/mayon-gallery.jpg" alt="Mayon Volcano Picture" width="246" height="138.38">
+          <img src="images/busay-falls.jpg" alt="Busay Falls Picture" width="246" height="138.38">
+          <img src="images/drone-view.jpg" alt="Drone Shot View in a Field in Albay" width="246" height="138.38">
+        </div>
+        <div class="nested-grid">
+          <img src="images/cagraray.jpg" alt="Cagraray Picture" width="246" height="138.38">
+          <img src="images/legazpi_city.jpg" alt="Legazpi City View Picture" width="246" height="138.38">
+          <img src="images/mayon-gallery-version2.jpg" alt="Mayon-Volcano - Other POV" width="246" height="138.38">
+          <img src="images/church.jpg" alt="Church Picture" width="246" height="138.38">
+        </div>
+        <img src="images/atv-ride-picture.jpg" alt="Man Riding an ATV">
+      </div>
+      </div>
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact-section" id="contact" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000"
+      data-aos-anchor-placement="top">
+      <div class="contact-header-info">
+        <h1>CONTACT & VISITOR INFO</h1>
+        <p>Need help planning? Reach out to the tourism office or send us a message.</p>
+      </div>
+      <div class="main-container">
+        <div class="contact-form" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+          <form class="form" action="form_success.html" method="GET">
+            <div class="form name-box">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form email-box">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+            </div>
+            <div class="form inquiry-box">
+              <label for="inquiry">Inquiry Type</label>
+              <select name="inquiry" id="inquiry" required>
+                <option value="" disabled selected hidden>--Select an Option--</option>
+                <option value="Tour Packages">Tour Packages</option>
+                <option value="Accommodation">Accommodation</option>
+                <option value="Transport">Transport</option>
+                <option value="Events & Festivals">Events & Festivals</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="form message-box">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="8" placeholder="Tell us your travel dates or questions..."
+                required></textarea>
+            </div>
+            <div class="form submit-button">
+              <button type="submit" id="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="tourist-assistance-card" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+          <h2>Tourist Assistance</h2>
+          <p>Albay Provincial Tourism Office</p>
+          <h3>Legazpi City, Albay</h3>
+          <div>
+            <h3>Phone: (052) 123-4567</h3>
+            <h3>Email: tourism@albay.gov.ph</h3>
+          </div>
+          <p>Emergency: 911 • Police: 117 • Hospital<br>
+            (BRTTH): (052) 480-0167</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="my-footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <a href="#landing-page">
+          <img src="images/albay-tourism-logo.png" width="70" height="70" alt="Albay Tourism Logo">
+        </a>
+        <p>Explore the beauty of Albay — from stunning landscapes to rich cultural experiences.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/albaytourism/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/albaytourism" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/albaytourism/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#plan-trip">Plan Your Trip</a></li>
+          <li><a href="#tour">Tour Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-explore">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#plan-trip">Travel Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Information</h3>
+        <p><i class="fa-solid fa-phone"></i> +63 965 742 8033</p>
+        <p><i class="fa-solid fa-envelope"></i> info@albaytourism.com</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> Albay, Bicol Region, Philippines</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <hr>
+      <p>© 2025 Albay Tourism. All rights reserved.<br>
+        <i>Developed by <strong>Juan Miguel Austria</strong> — BSIT Student</i>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
