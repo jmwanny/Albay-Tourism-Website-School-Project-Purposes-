@@ -99,15 +99,13 @@ This project demonstrates proficiency in:
 
 **Course:** Web Technologies  
 **Program:** Bachelor of Science in Information Technology (BSIT)  
-**Academic Year:** [Your Year]  
-**Institution:** [Your School Name]
+**Institution:** Polytechnic Institute of Tabaco
 
 ## 👨‍💻 Author
 
-**[Your Name]**  
+**Juan Miguel Austria**  
 BSIT Student  
-[Your Email] (optional)  
-[LinkedIn Profile] (optional)
+juanmiguelaus2@gmail.com
 
 ## 📄 License
 
